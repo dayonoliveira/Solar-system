@@ -46,6 +46,9 @@ class Rectangle{
             throw new Error("Width and height must be greater than or equal to 1.");
         }
 
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
+
         this.points = [
             new Vector(2, [x, y]),
             new Vector(2, [x + w, y]),
@@ -71,9 +74,8 @@ class Rectangle{
     }
 
     draw(){
-        stroke(color(230, 138, 0));
-
-        fill(color(115, 0, 230));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         beginShape();
         vertex(this.points[0].get(1), this.points[0].get(2));
@@ -97,6 +99,9 @@ class Circle{
         if(t < 3){
             throw new Error("The value 't' must be greater than or equal to 3.");
         }
+
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
 
         let tr = new Transformations();
         this.angle = (360 / t);
@@ -134,9 +139,8 @@ class Circle{
         let center = 0;
         let next = 1;
 
-        stroke(color(230, 138, 0));
-
-        fill(color(115, 0, 230));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         beginShape();
 
@@ -164,6 +168,9 @@ class Circle{
 class Triangle{
 
     constructor(x1, y1, x2, y2, x3, y3){
+
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
         
         this.points = [
             new Vector(2, [x1, y1]),
@@ -192,9 +199,8 @@ class Triangle{
 
     draw(){
 
-        stroke(color(230, 138, 0));
-
-        fill(color(115, 0, 230));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         beginShape();
 

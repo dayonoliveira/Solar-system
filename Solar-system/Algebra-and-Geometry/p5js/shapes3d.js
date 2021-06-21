@@ -6,6 +6,9 @@ class Plane{
             throw new Error("Width and height must be greater than or equal to 1.");
         }
 
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
+
         this.points = [
             new Vector(3, [x, y, z]),
             new Vector(3, [x + w, y, z]),
@@ -34,7 +37,8 @@ class Plane{
 
     draw(){
 
-        stroke(color(230, 138, 0));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         fill(color(115, 0, 230));
         
@@ -60,6 +64,9 @@ class Parallelogram{
         if(w < 1 || h < 1 || l < 1){
             throw new Error("Width, height and length must be greater than or equal to 1.");
         }
+
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
 
         this.points = [
             new Vector(3, [x, y, z]),
@@ -92,9 +99,8 @@ class Parallelogram{
     }
 
     draw(){
-        stroke(color(230, 138, 0));
-
-        fill(color(115, 0, 230));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         beginShape();
         
@@ -168,6 +174,9 @@ class Sphere{
             throw new Error("Stacks must be greater than or equal to 2 and Sectors must be greater than or equal to 4.");
         }
 
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
+
         let tr = new Transformations();
         this.stack = st;
         this.sector = se;
@@ -235,9 +244,8 @@ class Sphere{
         let centerTop = 2;
         let nextTop = this.stack + 1;
 
-        stroke(color(230, 138, 0));
-
-        fill(color(115, 0, 230));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         beginShape();
 
@@ -324,6 +332,9 @@ class Pyramid{
             throw new Error("Width, height and 'hp' must be greater than or equal to 1.");
         }
 
+        this.fillColor = [115, 0, 230];
+        this.strokeColor = [230, 138, 0];
+
         this.points = [
             new Vector(3, [x, y, z]),
             new Vector(3, [x + w, y, z]),
@@ -356,9 +367,8 @@ class Pyramid{
         let center = 4;
         let next = 0;
 
-        stroke(color(230, 138, 0));
-
-        fill(color(115, 0, 230));
+        stroke(color(this.strokeColor[0], this.strokeColor[1], this.strokeColor[2]));
+        fill(color(this.fillColor[0], this.fillColor[1], this.fillColor[2]));
 
         beginShape();
         
