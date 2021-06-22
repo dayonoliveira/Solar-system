@@ -20,11 +20,10 @@ function setup(){
 }
 
 function draw(){
-    background(52);
+    background(10);
     orbsRoute();
 
     sun.draw();
-    sun.rotate(-0.5);
 
     mercury.draw();
     mercury.rotate(-117.6);
@@ -164,7 +163,6 @@ function orbsRoute(){
     // Mars route
     stroke(color(255, 102, 102));
     noFill();
-    smooth();
     circle(0, 0, 2440);
 
     // Jupiter route
