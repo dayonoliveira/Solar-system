@@ -66,8 +66,6 @@ class Transformations{
             throw new Error("The parameter must be an object of type Vector.");
         }else if(vector.dim != 2){
             throw new Error("The size of the vector must be 2.");
-        }else if(angle < 0 || angle > 360){
-            throw new Error("The angle must be between 0 and 360.");
         }
 
         let la = new LinearAlgebra();
@@ -98,8 +96,6 @@ class Transformations{
             throw new Error("The parameter must be an object of type Vector.");
         }else if(vector.dim != 3){
             throw new Error("The size of the vector must be 3.");
-        }else if(angle < 0 || angle > 360){
-            throw new Error("The angle must be between 0 and 360.");
         }
 
         let la = new LinearAlgebra();
@@ -130,8 +126,6 @@ class Transformations{
             throw new Error("The parameter must be an object of type Vector.");
         }else if(vector.dim != 3){
             throw new Error("The size of the vector must be 3.");
-        }else if(angle < 0 || angle > 360){
-            throw new Error("The angle must be between 0 and 360.");
         }
 
         let la = new LinearAlgebra();
@@ -162,8 +156,6 @@ class Transformations{
             throw new Error("The parameter must be an object of type Vector.");
         }else if(vector.dim != 3){
             throw new Error("The size of the vector must be 3.");
-        }else if(angle < 0 || angle > 360){
-            throw new Error("The angle must be between 0 and 360.");
         }
 
         let la = new LinearAlgebra();
