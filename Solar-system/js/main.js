@@ -149,45 +149,46 @@ function orbsRoute(){
     // Mercury route
     stroke(color(255, 255, 102));
     noFill();
-    ellipse(0, 0, 1240, 1240, 50);
+    circle(0, 0, 1240);
 
     // Venus route
     stroke(color(204, 255, 255));
     noFill();
-    ellipse(0, 0, 1640, 1640, 50);
+    circle(0, 0, 1640);
 
     // Earth route
     stroke(color(0, 102, 255));
     noFill();
-    ellipse(0, 0, 2040, 2000, 50);
+    circle(0, 0, 2040);
 
     // Mars route
     stroke(color(255, 102, 102));
     noFill();
-    ellipse(0, 0, 2440, 2440, 50);
+    smooth();
+    circle(0, 0, 2440);
 
     // Jupiter route
     stroke(color(255, 204, 102));
     noFill();
-    ellipse(0, 0, 2840, 2840, 50);
+    circle(0, 0, 2840);
 
     // Saturn route
     stroke(color(255, 255, 102));
     noFill();
-    ellipse(0, 0, 3240, 3240, 50);
+    circle(0, 0, 3240);
 
     // Uranus route
     stroke(color(51, 204, 204));
     noFill();
-    ellipse(0, 0, 3640, 3640, 50);
+    circle(0, 0, 3640);
 
     // Neptune route
     stroke(color(51, 102, 255));
     noFill();
-    ellipse(0, 0, 4040, 4040, 50);
+    circle(0, 0, 4040);
 
     // Pluto route
     stroke(color(255, 255, 255));
     noFill();
-    ellipse(0, 0, 4440, 4440, 50);
+    circle(0, 0, 4440);
 }
