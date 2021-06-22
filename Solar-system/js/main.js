@@ -1,8 +1,8 @@
 let sun = new Sphere(0, 0, 0, 545, 20, 20);
-let mercury = new Sphere(613, 0, 0, 1.915, 10, 10);
-let venus = new Sphere(723, 0, 0, 4.745, 15, 15);
-let earth = new Sphere(1000, 0, 0, 5, 15, 15);
-let moon = new Sphere(1002.57, 0, 2, 1.362, 10, 10);
+let mercury = new Sphere(620, 0, 0, 1.915, 10, 10);
+let venus = new Sphere(820, 0, 0, 4.745, 15, 15);
+let earth = new Sphere(1020, 0, 0, 5, 15, 15);
+let moon = new Sphere(1022.57, 0, 2, 1.362, 10, 10);
 let mars = new Sphere(1220, 0, 0, 2.66, 10, 10);
 let jupiter = new Sphere(1420, 0, 0, 56.05, 15, 15);
 let saturn = new Sphere(1620, 0, 0, 47.25, 15, 15);
@@ -16,17 +16,19 @@ function setup(){
     createEasyCam();
     frameRate(24);
     orbsColor();
+    
 }
 
 function draw(){
     background(52);
+    orbsRoute();
 
     sun.draw();
     sun.rotate(-0.5);
 
     mercury.draw();
     mercury.rotate(-117.6);
-
+    
     venus.draw();
     venus.rotate(488);
 
@@ -141,4 +143,51 @@ function orbsColor(){
     pluto.strokeColor[0] = 255;
     pluto.strokeColor[1] = 255;
     pluto.strokeColor[2] = 255;
+}
+
+function orbsRoute(){
+    // Mercury route
+    stroke(color(255, 255, 102));
+    noFill();
+    ellipse(0, 0, 1240, 1240, 50);
+
+    // Venus route
+    stroke(color(204, 255, 255));
+    noFill();
+    ellipse(0, 0, 1640, 1640, 50);
+
+    // Earth route
+    stroke(color(0, 102, 255));
+    noFill();
+    ellipse(0, 0, 2040, 2000, 50);
+
+    // Mars route
+    stroke(color(255, 102, 102));
+    noFill();
+    ellipse(0, 0, 2440, 2440, 50);
+
+    // Jupiter route
+    stroke(color(255, 204, 102));
+    noFill();
+    ellipse(0, 0, 2840, 2840, 50);
+
+    // Saturn route
+    stroke(color(255, 255, 102));
+    noFill();
+    ellipse(0, 0, 3240, 3240, 50);
+
+    // Uranus route
+    stroke(color(51, 204, 204));
+    noFill();
+    ellipse(0, 0, 3640, 3640, 50);
+
+    // Neptune route
+    stroke(color(51, 102, 255));
+    noFill();
+    ellipse(0, 0, 4040, 4040, 50);
+
+    // Pluto route
+    stroke(color(255, 255, 255));
+    noFill();
+    ellipse(0, 0, 4440, 4440, 50);
 }
